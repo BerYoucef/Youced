@@ -1,0 +1,7 @@
+- **Q :** What if the user send negative number or null, it'll return false But is that really safe?
+- **A :** If the function return false to 5, well 5 is a valid number "With in range" but the logic of the function says false because it's not aisle number. But if the input not in range then it should not evaluated at all. sending false in both cases is a big problem, Because **one is a valid input but not correct** and the other is **not an allowed input (Not Whitelisted)**, returning False for both of them make no sense. The Flow Should Be like :
+    - **Type Check** : Check if the input is number, to avoid other data types.
+    - **Range Check** : Check if the number is with in range (Because SeatNum is an interval from 1 to 32), to avoid null input or negative values and so on. and if the number pass this check then we pass it to the function logic and treat it.
+    - **Check if 1 or 32** : Here we are at the function logic, False here is acceptable.  
+        the last point is to produce error message based on the check type.  
+        the good thing in this function is it use **Boundary values** as variables like SN1 and SN3 and this can help if the interval range changed, we might not touch the function at all, we change only the variable value. and this **can ensure the stability of the system undre any circumstances**.
