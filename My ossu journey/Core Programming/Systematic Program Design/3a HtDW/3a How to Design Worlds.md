@@ -34,8 +34,8 @@ We have **3** main steps here.
 		1) main first :
 			- define the main function, that we will use to run the program. 
 		2) wish list entries for big-bang handlers: 
-			- here we define the functions that we need in the main inside the big-bang function. 
-			- they are not a full functions but just the name of the function we need, then we add it to the wish-list to finish it later when we have the full wish list.
+			- Here we define the functions that we need in the main inside the big-bang function. 
+			- They are not full functions but just the names of the function we need, we then add them to the wish-list to finish them later once the wish-list is complete.
 4) Then we work on the wish lists until we finish them all.
 
 Example:
