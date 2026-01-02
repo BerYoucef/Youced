@@ -29,7 +29,7 @@ We have **3** main steps here.
 	- We simply convert our constant list from 1.2 to code like (define C 2). 
 2) Data definition using **HtDD** :
 	- we simply use the changing information from the domain analysis with HtDD recipe. nothing more, nothing less. 
-3) 1. Functions using **HtDF** :
+3) Functions using **HtDF** :
 	- At this step we have 2 sub-steps :
 		1) main first :
 			- define the main function, that we will use to run the program. 
