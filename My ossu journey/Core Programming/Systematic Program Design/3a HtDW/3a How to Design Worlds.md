@@ -17,7 +17,8 @@ It has 4 steps like the following:
 2) Identify constant information: 
 	- in this step we simply declare the constant values. like the image width and height, and everything is constant. 
 3) Identify changing information : 
-	- just like the step before it (1.2), we declare changing information, like for example the speed, coordinates, all the information either constants or changing are based on the program and the quality of our sketch from the step 1.1 . 
+	- Just like the step before (1.2), we declare changing information, like for example the speed, coordinates.
+    - Both the information either constants or changing are based on the program and the quality of our sketch from the step 1.1 . 
 4) Identify Big-bang Options: 
 	- Here we declare Big-bang Options like `to-draw` `on-tick`  `on-key` , each one do something, and the big-bang just squeeze all of this pieces together in one runtime program that is based on events, because each piece is an event, like `on-key` will work only when we press something on the keyboard.
 From that we finish the first part. 
