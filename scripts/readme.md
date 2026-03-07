@@ -32,6 +32,8 @@ An advanced memory-parsing script. It reads a raw memory dump extracted dynamica
 parses the bytes into 24-byte RGB/ASCII chunks, and dynamically calculates valid integer 
 factors (width/height < 256) to bypass strict `uint8_t` memory constraints and generate the final payload.
 
+* **`cimgV3_script.py`**:
+  Introduces handling for Directive Codes (specifically 60539) which are injected before the pixel data.
 ---
 
 <a id="القسم-العربي"></a>
@@ -61,3 +63,5 @@ factors (width/height < 256) to bypass strict `uint8_t` memory constraints and g
 سكربت متقدم لتحليل الذاكرة أوتوماتيكياً. يقوم بقراءة ملف تفريغ ذاكرة (Memory Dump) تم
 استخراجه بواسطة **GDB**، ويحلل البيانات إلى بكسلات بحجم 24 بايت، ثم يحسب الأبعاد (الطول والعرض) ديناميكياً
 لتجاوز قيود المتغيرات (أقل من 256) وتوليد الاستغلال النهائي.
+* **`cimgV3_script.py`**:
+يتميز هذا السكربت بإضافة دعم لـ Directive Codes (تحديداً الكود 60539) ودمجه بصيغة Little-endian قبل بيانات البكسلات مباشرة.
