@@ -34,6 +34,9 @@ factors (width/height < 256) to bypass strict `uint8_t` memory constraints and g
 
 * **`cimgV3_script.py`**:
   Introduces handling for Directive Codes (specifically 60539) which are injected before the pixel data.
+
+* **`cimgV3.1_script.py`**:
+Implements a custom compression algorithm using a new Directive Code (59586). It groups adjacent non-empty pixels into a single block to significantly reduce the final File size and bypass a strict 1340-byte file size constraint.
 ---
 
 <a id="القسم-العربي"></a>
@@ -65,3 +68,5 @@ factors (width/height < 256) to bypass strict `uint8_t` memory constraints and g
 لتجاوز قيود المتغيرات (أقل من 256) وتوليد الاستغلال النهائي.
 * **`cimgV3_script.py`**:
 يتميز هذا السكربت بإضافة دعم لـ Directive Codes (تحديداً الكود 60539) ودمجه بصيغة Little-endian قبل بيانات البكسلات مباشرة.
+* **`cimg_V3.1_script.py`**:
+يطبق خوارزمية ضغط مخصصة باستخدام كود توجيهي جديد (Directive 59586). يقوم بتجميع البكسلات المتجاورة (غير الفارغة) في كتلة واحدة لتقليل حجم الملف النهائي بشكل كبير، وذلك لتجاوز قيد صارم يمنع تجاوز حجم الملف لـ 1340 بايت.
