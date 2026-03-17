@@ -65,17 +65,17 @@ def solve():
 
     # Main Header
     header = struct.pack('<4shbbI', b'cIMG', 3, width, height, num_directives)
-    payload = header + directives_data
+    Final_Data = header + directives_data
 
     # Saving File
     with open("solution.cimg", "wb") as f:
-        f.write(payload)
+        f.write(Final_Data)
 
     print(f"[+] Generated 'solution.cimg'")
     print(f"[+] Number of Directives used: {num_directives}")
-    print(f"[+] Final File Size: {len(payload)} bytes ")
+    print(f"[+] Final File Size: {len(Final_Data)} bytes ")
 
-    if len(payload) > 1340:
+    if len(Final_Data) > 1340:
         print("[-] WARNING: Size is still above 1340!")
     else:
         print("[*] Done!")
